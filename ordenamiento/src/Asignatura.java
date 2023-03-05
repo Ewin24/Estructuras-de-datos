@@ -1,26 +1,26 @@
 public class Asignatura {
 
-    public String codigo;
+    public int codigo;
     public String nombre;
     public String carrera;
     public String nCreditos;
 
-    public Asignatura(String codigo, String nombre, String carrera, String Ncreditos) {
+    public Asignatura(int codigo, String nombre, String carrera, String Ncreditos) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.carrera = carrera;
         this.nCreditos = Ncreditos;
     }
 
-    public Asignatura() {
-    }
-
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
+    }
+
+    public Asignatura() {
     }
 
     public String getNombre() {
@@ -49,7 +49,11 @@ public class Asignatura {
 
     @Override
     public String toString() {
-        return "Asignatura{" + "codigo=" + codigo + ", nombre=" + nombre + ", carrera=" + carrera + ", nCreditos=" + nCreditos + '}';
+        return "Asignatura{" +
+                "codigo=" + codigo +
+                ", nombre='" + nombre + '\'' +
+                ", carrera='" + carrera + '\'' +
+                ", nCreditos='" + nCreditos + '\'' +
+                '}';
     }
-
 }
